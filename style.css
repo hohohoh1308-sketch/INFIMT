@@ -832,4 +832,143 @@ footer ul{
 
 .background01 ul li{
   line-height:3;
+
+}
+
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+@media (max-width: 768px) {
+  /* Шапка */
+  .header {
+    padding: 0 20px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .header .logo {
+    font-size: 16px;
+  }
+  .header ul li a {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  /* Меню (выпадающее) на мобильных */
+  .header ul li ul {
+    width: 100%;
+    position: static;
+    background: #f0f0f0;
+  }
+  .header ul li ul li {
+    border: none;
+  }
+  .header ul li ul li a {
+    padding-left: 20px;
+  }
+
+  /* Общие корректировки блоков */
+  .background,
+  .background1,
+  .background2,
+  .background01,
+  .background02,
+  .background10,
+  .gift1,
+  .gift2 {
+    width: 95% !important;
+    height: auto !important;
+    padding: 20px 15px !important;
+    position: static !important;
+    margin: 20px auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
+  }
+
+  /* Изображения внутри блоков */
+  .displayed1,
+  .displayed2,
+  .displayed3,
+  .displayed4,
+  .promocof1 {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 20px 0 !important;
+    max-width: 100%;
+  }
+
+  /* Тексты в блоках */
+  .background1 h2,
+  .background1 p,
+  .background2 h2,
+  .background2 p {
+    margin: 10px 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    position: static !important;
+    bottom: 0 !important;
+  }
+
+  /* Специфично для promo-страницы */
+  .background01, .background02 {
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+  .promstart {
+    font-size: 2em !important;
+    text-align: center !important;
+    margin: 20px 0 !important;
+  }
+
+  /* Сетка картинок в меню и подарках */
+  .background10,
+  .gift1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .menucup1, .menucup2, .menucup3, .menucup4,
+  .menucup11, .menucup22, .menucup33, .menucup44 {
+    position: static !important;
+    width: 45% !important;
+    height: auto !important;
+    margin: 0 !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transition: none !important; /* отключаем hover-эффекты на моб. */
+  }
+  .menucup1:hover, .menucup2:hover, .menucup3:hover, .menucup4:hover,
+  .menucup11:hover, .menucup22:hover, .menucup33:hover, .menucup44:hover {
+    width: 45% !important; /* фиксируем размер при наведении */
+    left: auto !important;
+    box-shadow: none !important;
+  }
+
+  /* Подвал */
+  .podval, .podvalmenu, .podval2 {
+    height: auto !important;
+    padding: 20px 15px !important;
+    margin-top: 30px !important;
+  }
+  .footnuv1, .footnuv2, .footnuv3 {
+    text-align: center !important;
+    margin: 20px 0 !important;
+  }
+  footer ul {
+    padding: 0;
+  }
+
+  /* Таблицы */
+  .gift2 table {
+    width: 100% !important;
+    margin: 20px 0 !important;
+    font-size: 0.9em !important;
+  }
+  .gift2 h2, .gift2 p {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
 }
